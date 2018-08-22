@@ -3,8 +3,8 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import TodoList from '@/components/TodoList'
 import Computed from '@/components/Computed'
-import Intro from '@/components/Intro'
-import Test from '@/components/Test'
+//import Intro from '@/components/Intro'
+//import Test from '@/components/Test'
 
 Vue.use(Router)
 

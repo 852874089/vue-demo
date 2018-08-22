@@ -1,10 +1,10 @@
 <template>
   <div>
   <div id="todoList">
-    <input type="text" v-model="inputValue" />
+    <input type="text" v-model="additem.inputValue" />
     <button v-on:click="handleBtnClick">提交</button>
     <ul>
-       <li v-for="item in list">{{item}}</li>
+       <li v-for="item in list">{{item.inputValue}}</li>
     </ul>
   </div>
 </div>
@@ -16,14 +16,14 @@ export default{
   data () {
     return {
       list: [],
-      inputValue: ''
+      additem: {inputValue: ''}
     }
   },
 
   methods: {
     handleBtnClick: function () {
-      this.list.push(this.inputValue)
-      this.inputValue = ''
+      this.list.push(this.additem)
+      this.additem = {inputValue: ''}
     }
   }
 }
