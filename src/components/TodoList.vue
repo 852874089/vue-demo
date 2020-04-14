@@ -22,10 +22,9 @@ export default{
 
   methods: {
     handleBtnClick: function () {
-      if (this.additem.inputValue==''){
+      if (this.additem.inputValue === '') {
         alert('请在输入框里面输入信息！')
-
-      }else{
+      } else {
         this.list.push(this.additem)
         this.additem = { inputValue: '' }
       }
