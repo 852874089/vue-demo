@@ -7,6 +7,7 @@ import VueTodos from '@/pages/VueTodos'
 const TodoList = r => require.ensure([], () => r(require('@/components/TodoList')))
 const ParentSon = r => require.ensure([], () => r(require('@/pages/ParentSon/index')))
 const SonParent = r => require.ensure([], () => r(require('@/pages/SonParent/index')))
+const EmitOn = r => require.ensure([], () => r(require('@/pages/EmitOn/index')))
 
 // import Intro from '@/components/Intro'
 // import Test from '@/components/Test'
@@ -45,6 +46,11 @@ export default new Router({
       path: '/pages/SonParent',
       name: 'SonParent',
       component: SonParent
+    },
+    {
+      path: '/pages/EmitOn',
+      name: 'EmitOn',
+      component: EmitOn
     }
   ]
 

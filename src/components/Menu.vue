@@ -6,6 +6,7 @@
       <li><router-link to="/Computed">computed计算属性</router-link></li>
       <li><router-link to="/pages/ParentSon">父子组件通讯方式</router-link></li>
       <li><router-link to="/pages/SonParent">子父组件通讯方式</router-link></li>
+      <li><router-link to="/pages/EmitOn">$emit/$on父子，兄弟，跨级通信</router-link></li>
     </ul>
   </div>
 </template>
